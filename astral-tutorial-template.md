@@ -1,5 +1,5 @@
 
-ASTRAL is a java program for estimating a species tree given a set of unrooted gene trees. ASTRAL is statistically consistent under multi-species coalescent model (and thus is useful for handling ILS). The optimization problem solved by ASTRAL seeks to find the tree that maximizes the number of induced quartet trees in gene trees that are shared by the species tree. The optimization problem is solved exactly for a constrained version of the problem that restricts the search space. An exact solution to the unconstrained version is also implemented and can run on small datasets (less than 18 taxa). The current repository (master branch) includes the ASTRAL-III algorithm.  
+ASTRAL*is*a java program for estimating a species tree given a set of unrooted gene trees. ASTRAL is statistically consistent under multi-species coalescent model (and thus is useful for handling ILS). The optimization problem solved by ASTRAL seeks to find the tree that maximizes the number of induced quartet trees in gene trees that are shared by the species tree. The optimization problem is solved exactly for a constrained version of the problem that restricts the search space. An exact solution to the unconstrained version is also implemented and can run on small datasets (less than 18 taxa). The current repository (master branch) includes the ASTRAL-III algorithm.  
 
 Read the [README](README.md) file in addition to this tutorial. 
 
@@ -7,7 +7,7 @@ Email: `astral-users@googlegroups.com` for questions. Please subscribe to the ma
 
 
 
-* [Installation](#installation)
+* [Installation]( installation)
 * [Running ASTRAL](#running-astral)
   * [ASTRAL Help](#astral-help)
   * [Running on the sample mammalian dataset](#running-on-the-sample-mammalian-dataset)
@@ -152,7 +152,7 @@ There are [many more tools](http://en.wikipedia.org/wiki/List_of_phylogenetic_tr
 
 For this tutorial, let's use the online viewer (EvolView) or any other tool you can manage to download and install. Using either of these applications open the `test_data/song_mammals.tre` file. We will explore various tree viewing options. Importantly, we will reroot the tree at the correct node, which is always necessary, since the rooting of the ASTRAL trees is arbitrary and meaningless. 
 
-There have been some reports that FigTree and some other tools sometimes have difficulty opening ASTRAL trees. This is likely because ASTRAL does not generate terminal branch lengths. In the case of FigTree, opening the three two or three times in a row often works (who knows why!). In other tools, you may have to add an arbitrary branch length to each branch. [This script](https://github.com/smirarab/global/blob/master/src/mirphyl/utils/add-bl.py) may be of help.  
+There have been some reports that FigTree and some other tools sometimes have difficulty opening ASTRAL trees. This is likely because ASTRAL does not generate terminal branch lengths. In the case of FigTree, opening the three two or three times in a row often works (who knows why#). In other tools, you may have to add an arbitrary branch length to each branch. [This script](https://github.com/smirarab/global/blob/master/src/mirphyl/utils/add-bl.py) may be of help.  
 
 ### Branch length and support
 
@@ -525,3 +525,4 @@ ASTRAL code uses bytecode and some reverse engineered code from PhyloNet package
 
 ### Bug Reports
 contact: ``astral-users@googlegroups.com``
+ 
