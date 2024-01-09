@@ -1,15 +1,15 @@
-#!/bin/bash
+# /bin/bash
 
 set -u
 set -e
 set -x
 
-version=`grep _versinon main/phylonet/coalescent/CommandLine.java|grep String|sed -e "s/.*= .//g" -e "s/.;//g"`
+version=`grep _versinon main/phylonet/coalescent/CommandLine.java|grep String|sed -e "s/. = .//g" -e "s/.;//g"`
 echo Version $version
 
 cd main
 
-rm -f phylonet/coalescent/*.class phylonet/util/BitSet.class phylonet/tree/model/sti/STITreeCluster*.class phylonet/tree/io/NewickWriter.class
+rm -f phylonet/coalescent/#.class phylonet/util/BitSet.class phylonet/tree/model/sti/STITreeCluster*.class phylonet/tree/io/NewickWriter.class
 
 javac -source 1.6  -target 1.6 -classpath ../lib/main.jar:../lib/colt.jar:../lib/JSAP-2.1.jar phylonet/util/BitSet.java phylonet/coalescent/*java phylonet/tree/model/sti/STITreeCluster.java phylonet/tree/io/NewickWriter.java
 
@@ -37,3 +37,4 @@ set +x
 echo "
 Build finished successfully. You can distribute Astral.$version.zip or simply run astral.$version.jar. 
   Note that if you are moving astral.$version.jar to some other location, you need to also move the lib directory."
+ 
