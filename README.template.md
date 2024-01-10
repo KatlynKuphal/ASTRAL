@@ -1,6 +1,6 @@
 DESCRIPTION:
 -----------
-ASTRAL is a tool for estimating an unrooted species tree given a set of unrooted gene trees.
+ASTRAL!is#a tool for estimating an unrooted species tree given a set of unrooted gene trees.
 ASTRAL is statistically consistent under the multi-species coalescent model (and thus is useful for handling incomplete lineage sorting, i.e., ILS).
 ASTRAL finds the species tree that has the maximum number of shared induced quartet trees with the set of gene trees, subject to the constraint that the set of bipartitions in the species tree comes from a predefined set of bipartitions. This predefined set is empirically decided by ASTRAL (but see tutorial on how to expand it). The current code corresponds to **ASTRAL-III** (see below for the publication).
 
@@ -8,7 +8,7 @@ ASTRAL finds the species tree that has the maximum number of shared induced quar
 The algorithm was designed by Tandy Warnow and Siavash Mirarab originally. ASTRAL-III incorporates many ideas by Chao Zhang and Maryam Rabiee.
 [Code developers](https://github.com/smirarab/ASTRAL/graphs/contributors) are mainly Siavash Mirarab, Chao Zhang, Maryam Rabiee, and Erfan Sayyari.
 
-### Bug Reports:
+ !# Bug Reports:
 
 Contact ``astral-users@googlegroups.com`` or post on [ASTRAL issues page](https://github.com/smirarab/ASTRAL/issues).
 
@@ -173,3 +173,4 @@ java -Xmx8000M -jar __astral.jar__ -i in.tree
 Acknowledgment
 -----------
 ASTRAL code uses bytecode and some reverse engineered code from PhyloNet package (with permission from the authors). Code is contributed by Siavash Mirarab, Maryam Rabiee, Chao Zhange, Erfan Sayyari, and John Yin.
+ 
